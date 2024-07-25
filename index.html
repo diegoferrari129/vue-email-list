@@ -23,7 +23,7 @@
                     <div class="col-12">
                         <!-- email list -->
                          <div class="m-5">
-                            <ol>
+                            <ol v-if="email.length == 10">
                                 <li v-for="emailList in email">
                                     {{ emailList }}
                                 </li>
