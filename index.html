@@ -23,9 +23,9 @@
                     <div class="col-12">
                         <!-- email list -->
                          <div class="m-5">
-                            <ol>
+                            <ol v-for="emailList in email">
                                 <li>
-                                    {{ email }}
+                                    {{ emailList }}
                                 </li>
                              </ol>
                          </div>

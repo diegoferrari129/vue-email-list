@@ -6,6 +6,9 @@ createApp({
             email: []
         }
     },
+    created() {
+        this.generateTenEmails();
+    },
     methods: {
         // funzione per generare 10 email
         generateTenEmails() {
@@ -15,6 +18,7 @@ createApp({
                 axios.get('https://flynn.boolean.careers/exercises/api/random/mail').then((response) => {
                     
                     this.email.push(response.data.response)
+
                 });
             }
         }
